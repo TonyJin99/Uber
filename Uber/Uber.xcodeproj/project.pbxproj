@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA135D171D1D920800CB10E4 /* TJHistroyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA135D161D1D920800CB10E4 /* TJHistroyViewController.swift */; };
+		EA135D1B1D1F031000CB10E4 /* TJDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA135D1A1D1F031000CB10E4 /* TJDetailViewController.swift */; };
+		EA135D1E1D2065B800CB10E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA135D1C1D2065B800CB10E4 /* Main.storyboard */; };
+		EA7E4CFD1D199A9200DDCA6A /* TJDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7E4CFC1D199A9200DDCA6A /* TJDriverViewController.swift */; };
+		EA8134AE1D19A8C700C626A5 /* RiderInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA8134AC1D19A8C700C626A5 /* RiderInfo.xcdatamodeld */; };
+		EA8134B31D19A91F00C626A5 /* RiderInfo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8134B01D19A91F00C626A5 /* RiderInfo+CoreDataProperties.m */; };
+		EA8134B41D19A91F00C626A5 /* RiderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8134B21D19A91F00C626A5 /* RiderInfo.m */; };
+		EA8134B61D19E54200C626A5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8134B51D19E54200C626A5 /* CoreDataManager.swift */; };
+		EA91CD6A1D20E24D001A6BDC /* CallingInfo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA91CD681D20E24D001A6BDC /* CallingInfo.xcdatamodeld */; };
+		EA91CD6F1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EA91CD6C1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.m */; };
+		EA91CD701D20E28A001A6BDC /* CallingInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = EA91CD6E1D20E28A001A6BDC /* CallingInformation.m */; };
+		EA9405321D11C89600B75D02 /* TJAccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9405311D11C89600B75D02 /* TJAccountCell.swift */; };
+		EA9405341D123B4300B75D02 /* TJAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9405331D123B4300B75D02 /* TJAccountViewController.swift */; };
+		EAB43B8E1D105F64006D3FF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB43B8D1D105F64006D3FF7 /* AppDelegate.swift */; };
+		EAB43B961D105F64006D3FF7 /* Uber.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAB43B941D105F64006D3FF7 /* Uber.xcdatamodeld */; };
+		EAB43B981D105F64006D3FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB43B971D105F64006D3FF7 /* Assets.xcassets */; };
+		EAB43B9B1D105F64006D3FF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB43B991D105F64006D3FF7 /* LaunchScreen.storyboard */; };
+		EAB43BA61D105F64006D3FF7 /* UberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BA51D105F64006D3FF7 /* UberTests.swift */; };
+		EAB43BB11D105F64006D3FF7 /* UberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BB01D105F64006D3FF7 /* UberUITests.swift */; };
+		EAB43BBF1D105FA0006D3FF7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB43BBE1D105FA0006D3FF7 /* MapKit.framework */; };
+		EAB43BC51D10666A006D3FF7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BC41D10666A006D3FF7 /* SWRevealViewController.m */; };
+		EAB43BC81D1071E8006D3FF7 /* TJSidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BC71D1071E8006D3FF7 /* TJSidebarTableViewController.swift */; };
+		EAB43BCA1D1092AE006D3FF7 /* TJLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BC91D1092AE006D3FF7 /* TJLoginViewController.swift */; };
+		EAB43BCC1D1096DD006D3FF7 /* TJSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BCB1D1096DD006D3FF7 /* TJSignupViewController.swift */; };
+		EAB43BD11D109A7A006D3FF7 /* Information+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BCE1D109A7A006D3FF7 /* Information+CoreDataProperties.m */; };
+		EAB43BD21D109A7A006D3FF7 /* Information.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BD01D109A7A006D3FF7 /* Information.m */; };
+		EAB43BD41D10A0CC006D3FF7 /* TJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB43BD31D10A0CC006D3FF7 /* TJHomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAB43BA21D105F64006D3FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB43B821D105F64006D3FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB43B891D105F64006D3FF7;
+			remoteInfo = Uber;
+		};
+		EAB43BAD1D105F64006D3FF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAB43B821D105F64006D3FF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAB43B891D105F64006D3FF7;
+			remoteInfo = Uber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA135D161D1D920800CB10E4 /* TJHistroyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJHistroyViewController.swift; sourceTree = "<group>"; };
+		EA135D1A1D1F031000CB10E4 /* TJDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJDetailViewController.swift; sourceTree = "<group>"; };
+		EA135D1D1D2065B800CB10E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA7E4CFC1D199A9200DDCA6A /* TJDriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJDriverViewController.swift; sourceTree = "<group>"; };
+		EA8134AD1D19A8C700C626A5 /* RiderInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RiderInfo.xcdatamodel; sourceTree = "<group>"; };
+		EA8134AF1D19A91F00C626A5 /* RiderInfo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RiderInfo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA8134B01D19A91F00C626A5 /* RiderInfo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RiderInfo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA8134B11D19A91F00C626A5 /* RiderInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiderInfo.h; sourceTree = "<group>"; };
+		EA8134B21D19A91F00C626A5 /* RiderInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiderInfo.m; sourceTree = "<group>"; };
+		EA8134B51D19E54200C626A5 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EA91CD691D20E24D001A6BDC /* CallingInfo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CallingInfo.xcdatamodel; sourceTree = "<group>"; };
+		EA91CD6B1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CallingInformation+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EA91CD6C1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CallingInformation+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EA91CD6D1D20E28A001A6BDC /* CallingInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallingInformation.h; sourceTree = "<group>"; };
+		EA91CD6E1D20E28A001A6BDC /* CallingInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallingInformation.m; sourceTree = "<group>"; };
+		EA9405311D11C89600B75D02 /* TJAccountCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJAccountCell.swift; sourceTree = "<group>"; };
+		EA9405331D123B4300B75D02 /* TJAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJAccountViewController.swift; sourceTree = "<group>"; };
+		EAB43B8A1D105F64006D3FF7 /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB43B8D1D105F64006D3FF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAB43B951D105F64006D3FF7 /* Uber.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Uber.xcdatamodel; sourceTree = "<group>"; };
+		EAB43B971D105F64006D3FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAB43B9A1D105F64006D3FF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAB43B9C1D105F64006D3FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB43BA11D105F64006D3FF7 /* UberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB43BA51D105F64006D3FF7 /* UberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberTests.swift; sourceTree = "<group>"; };
+		EAB43BA71D105F64006D3FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB43BAC1D105F64006D3FF7 /* UberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB43BB01D105F64006D3FF7 /* UberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberUITests.swift; sourceTree = "<group>"; };
+		EAB43BB21D105F64006D3FF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB43BBE1D105FA0006D3FF7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EAB43BC31D10666A006D3FF7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EAB43BC41D10666A006D3FF7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EAB43BC61D10668F006D3FF7 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		EAB43BC71D1071E8006D3FF7 /* TJSidebarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJSidebarTableViewController.swift; sourceTree = "<group>"; };
+		EAB43BC91D1092AE006D3FF7 /* TJLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJLoginViewController.swift; sourceTree = "<group>"; };
+		EAB43BCB1D1096DD006D3FF7 /* TJSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJSignupViewController.swift; sourceTree = "<group>"; };
+		EAB43BCD1D109A7A006D3FF7 /* Information+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Information+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EAB43BCE1D109A7A006D3FF7 /* Information+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Information+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EAB43BCF1D109A7A006D3FF7 /* Information.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Information.h; sourceTree = "<group>"; };
+		EAB43BD01D109A7A006D3FF7 /* Information.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Information.m; sourceTree = "<group>"; };
+		EAB43BD31D10A0CC006D3FF7 /* TJHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJHomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAB43B871D105F64006D3FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB43BBF1D105FA0006D3FF7 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB43B9E1D105F64006D3FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB43BA91D105F64006D3FF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAB43B811D105F64006D3FF7 = {
+			isa = PBXGroup;
+			children = (
+				EAB43BBE1D105FA0006D3FF7 /* MapKit.framework */,
+				EAB43BC21D10666A006D3FF7 /* SWRevealViewController */,
+				EAB43B8C1D105F64006D3FF7 /* Uber */,
+				EAB43BA41D105F64006D3FF7 /* UberTests */,
+				EAB43BAF1D105F64006D3FF7 /* UberUITests */,
+				EAB43B8B1D105F64006D3FF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAB43B8B1D105F64006D3FF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB43B8A1D105F64006D3FF7 /* Uber.app */,
+				EAB43BA11D105F64006D3FF7 /* UberTests.xctest */,
+				EAB43BAC1D105F64006D3FF7 /* UberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAB43B8C1D105F64006D3FF7 /* Uber */ = {
+			isa = PBXGroup;
+			children = (
+				EACD13BE1D6E734C00BFDB43 /* Others */,
+				EAB43BC61D10668F006D3FF7 /* Bridge.h */,
+				EACD13BD1D6E732E00BFDB43 /* DataModel */,
+				EAB43BCB1D1096DD006D3FF7 /* TJSignupViewController.swift */,
+				EAB43BC91D1092AE006D3FF7 /* TJLoginViewController.swift */,
+				EAB43BC71D1071E8006D3FF7 /* TJSidebarTableViewController.swift */,
+				EA9405331D123B4300B75D02 /* TJAccountViewController.swift */,
+				EA9405311D11C89600B75D02 /* TJAccountCell.swift */,
+				EAB43BD31D10A0CC006D3FF7 /* TJHomeViewController.swift */,
+				EA7E4CFC1D199A9200DDCA6A /* TJDriverViewController.swift */,
+				EA135D1A1D1F031000CB10E4 /* TJDetailViewController.swift */,
+				EA135D161D1D920800CB10E4 /* TJHistroyViewController.swift */,
+				EA8134B51D19E54200C626A5 /* CoreDataManager.swift */,
+				EAB43B971D105F64006D3FF7 /* Assets.xcassets */,
+			);
+			path = Uber;
+			sourceTree = "<group>";
+		};
+		EAB43BA41D105F64006D3FF7 /* UberTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB43BA51D105F64006D3FF7 /* UberTests.swift */,
+				EAB43BA71D105F64006D3FF7 /* Info.plist */,
+			);
+			path = UberTests;
+			sourceTree = "<group>";
+		};
+		EAB43BAF1D105F64006D3FF7 /* UberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAB43BB01D105F64006D3FF7 /* UberUITests.swift */,
+				EAB43BB21D105F64006D3FF7 /* Info.plist */,
+			);
+			path = UberUITests;
+			sourceTree = "<group>";
+		};
+		EAB43BC21D10666A006D3FF7 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EAB43BC31D10666A006D3FF7 /* SWRevealViewController.h */,
+				EAB43BC41D10666A006D3FF7 /* SWRevealViewController.m */,
+			);
+			name = SWRevealViewController;
+			path = Uber/SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		EACD13BD1D6E732E00BFDB43 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				EAB43B941D105F64006D3FF7 /* Uber.xcdatamodeld */,
+				EAB43BCD1D109A7A006D3FF7 /* Information+CoreDataProperties.h */,
+				EAB43BCE1D109A7A006D3FF7 /* Information+CoreDataProperties.m */,
+				EAB43BCF1D109A7A006D3FF7 /* Information.h */,
+				EAB43BD01D109A7A006D3FF7 /* Information.m */,
+				EA8134AC1D19A8C700C626A5 /* RiderInfo.xcdatamodeld */,
+				EA8134AF1D19A91F00C626A5 /* RiderInfo+CoreDataProperties.h */,
+				EA8134B01D19A91F00C626A5 /* RiderInfo+CoreDataProperties.m */,
+				EA8134B11D19A91F00C626A5 /* RiderInfo.h */,
+				EA8134B21D19A91F00C626A5 /* RiderInfo.m */,
+				EA91CD681D20E24D001A6BDC /* CallingInfo.xcdatamodeld */,
+				EA91CD6B1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.h */,
+				EA91CD6C1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.m */,
+				EA91CD6D1D20E28A001A6BDC /* CallingInformation.h */,
+				EA91CD6E1D20E28A001A6BDC /* CallingInformation.m */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		EACD13BE1D6E734C00BFDB43 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				EAB43B8D1D105F64006D3FF7 /* AppDelegate.swift */,
+				EA135D1C1D2065B800CB10E4 /* Main.storyboard */,
+				EAB43B991D105F64006D3FF7 /* LaunchScreen.storyboard */,
+				EAB43B9C1D105F64006D3FF7 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAB43B891D105F64006D3FF7 /* Uber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB43BB51D105F64006D3FF7 /* Build configuration list for PBXNativeTarget "Uber" */;
+			buildPhases = (
+				EAB43B861D105F64006D3FF7 /* Sources */,
+				EAB43B871D105F64006D3FF7 /* Frameworks */,
+				EAB43B881D105F64006D3FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Uber;
+			productName = Uber;
+			productReference = EAB43B8A1D105F64006D3FF7 /* Uber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAB43BA01D105F64006D3FF7 /* UberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB43BB81D105F64006D3FF7 /* Build configuration list for PBXNativeTarget "UberTests" */;
+			buildPhases = (
+				EAB43B9D1D105F64006D3FF7 /* Sources */,
+				EAB43B9E1D105F64006D3FF7 /* Frameworks */,
+				EAB43B9F1D105F64006D3FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB43BA31D105F64006D3FF7 /* PBXTargetDependency */,
+			);
+			name = UberTests;
+			productName = UberTests;
+			productReference = EAB43BA11D105F64006D3FF7 /* UberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAB43BAB1D105F64006D3FF7 /* UberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB43BBB1D105F64006D3FF7 /* Build configuration list for PBXNativeTarget "UberUITests" */;
+			buildPhases = (
+				EAB43BA81D105F64006D3FF7 /* Sources */,
+				EAB43BA91D105F64006D3FF7 /* Frameworks */,
+				EAB43BAA1D105F64006D3FF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAB43BAE1D105F64006D3FF7 /* PBXTargetDependency */,
+			);
+			name = UberUITests;
+			productName = UberUITests;
+			productReference = EAB43BAC1D105F64006D3FF7 /* UberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAB43B821D105F64006D3FF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TJ;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Innovatis Tech";
+				TargetAttributes = {
+					EAB43B891D105F64006D3FF7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 84GN7F6BXF;
+						LastSwiftMigration = 0800;
+					};
+					EAB43BA01D105F64006D3FF7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 84GN7F6BXF;
+						LastSwiftMigration = 0800;
+						TestTargetID = EAB43B891D105F64006D3FF7;
+					};
+					EAB43BAB1D105F64006D3FF7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 84GN7F6BXF;
+						LastSwiftMigration = 0800;
+						TestTargetID = EAB43B891D105F64006D3FF7;
+					};
+				};
+			};
+			buildConfigurationList = EAB43B851D105F64006D3FF7 /* Build configuration list for PBXProject "Uber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAB43B811D105F64006D3FF7;
+			productRefGroup = EAB43B8B1D105F64006D3FF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAB43B891D105F64006D3FF7 /* Uber */,
+				EAB43BA01D105F64006D3FF7 /* UberTests */,
+				EAB43BAB1D105F64006D3FF7 /* UberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAB43B881D105F64006D3FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA135D1E1D2065B800CB10E4 /* Main.storyboard in Resources */,
+				EAB43B9B1D105F64006D3FF7 /* LaunchScreen.storyboard in Resources */,
+				EAB43B981D105F64006D3FF7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB43B9F1D105F64006D3FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB43BAA1D105F64006D3FF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAB43B861D105F64006D3FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA135D171D1D920800CB10E4 /* TJHistroyViewController.swift in Sources */,
+				EAB43BD21D109A7A006D3FF7 /* Information.m in Sources */,
+				EA9405321D11C89600B75D02 /* TJAccountCell.swift in Sources */,
+				EAB43BD11D109A7A006D3FF7 /* Information+CoreDataProperties.m in Sources */,
+				EA91CD701D20E28A001A6BDC /* CallingInformation.m in Sources */,
+				EA9405341D123B4300B75D02 /* TJAccountViewController.swift in Sources */,
+				EA91CD6F1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.m in Sources */,
+				EA8134AE1D19A8C700C626A5 /* RiderInfo.xcdatamodeld in Sources */,
+				EA91CD6A1D20E24D001A6BDC /* CallingInfo.xcdatamodeld in Sources */,
+				EAB43BC81D1071E8006D3FF7 /* TJSidebarTableViewController.swift in Sources */,
+				EAB43BCC1D1096DD006D3FF7 /* TJSignupViewController.swift in Sources */,
+				EAB43B961D105F64006D3FF7 /* Uber.xcdatamodeld in Sources */,
+				EAB43BC51D10666A006D3FF7 /* SWRevealViewController.m in Sources */,
+				EA7E4CFD1D199A9200DDCA6A /* TJDriverViewController.swift in Sources */,
+				EAB43BD41D10A0CC006D3FF7 /* TJHomeViewController.swift in Sources */,
+				EAB43BCA1D1092AE006D3FF7 /* TJLoginViewController.swift in Sources */,
+				EA8134B31D19A91F00C626A5 /* RiderInfo+CoreDataProperties.m in Sources */,
+				EAB43B8E1D105F64006D3FF7 /* AppDelegate.swift in Sources */,
+				EA8134B61D19E54200C626A5 /* CoreDataManager.swift in Sources */,
+				EA8134B41D19A91F00C626A5 /* RiderInfo.m in Sources */,
+				EA135D1B1D1F031000CB10E4 /* TJDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB43B9D1D105F64006D3FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB43BA61D105F64006D3FF7 /* UberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAB43BA81D105F64006D3FF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB43BB11D105F64006D3FF7 /* UberUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAB43BA31D105F64006D3FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB43B891D105F64006D3FF7 /* Uber */;
+			targetProxy = EAB43BA21D105F64006D3FF7 /* PBXContainerItemProxy */;
+		};
+		EAB43BAE1D105F64006D3FF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAB43B891D105F64006D3FF7 /* Uber */;
+			targetProxy = EAB43BAD1D105F64006D3FF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA135D1C1D2065B800CB10E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA135D1D1D2065B800CB10E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAB43B991D105F64006D3FF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB43B9A1D105F64006D3FF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAB43BB31D105F64006D3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EAB43BB41D105F64006D3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAB43BB61D105F64006D3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Uber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.Uber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Uber/Bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EAB43BB71D105F64006D3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Uber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.Uber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Uber/Bridge.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EAB43BB91D105F64006D3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.UberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uber.app/Uber";
+			};
+			name = Debug;
+		};
+		EAB43BBA1D105F64006D3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.UberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uber.app/Uber";
+			};
+			name = Release;
+		};
+		EAB43BBC1D105F64006D3FF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.UberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Uber;
+			};
+			name = Debug;
+		};
+		EAB43BBD1D105F64006D3FF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Tony.UberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Uber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAB43B851D105F64006D3FF7 /* Build configuration list for PBXProject "Uber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB43BB31D105F64006D3FF7 /* Debug */,
+				EAB43BB41D105F64006D3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB43BB51D105F64006D3FF7 /* Build configuration list for PBXNativeTarget "Uber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB43BB61D105F64006D3FF7 /* Debug */,
+				EAB43BB71D105F64006D3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB43BB81D105F64006D3FF7 /* Build configuration list for PBXNativeTarget "UberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB43BB91D105F64006D3FF7 /* Debug */,
+				EAB43BBA1D105F64006D3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB43BBB1D105F64006D3FF7 /* Build configuration list for PBXNativeTarget "UberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB43BBC1D105F64006D3FF7 /* Debug */,
+				EAB43BBD1D105F64006D3FF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA8134AC1D19A8C700C626A5 /* RiderInfo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA8134AD1D19A8C700C626A5 /* RiderInfo.xcdatamodel */,
+			);
+			currentVersion = EA8134AD1D19A8C700C626A5 /* RiderInfo.xcdatamodel */;
+			path = RiderInfo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EA91CD681D20E24D001A6BDC /* CallingInfo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA91CD691D20E24D001A6BDC /* CallingInfo.xcdatamodel */,
+			);
+			currentVersion = EA91CD691D20E24D001A6BDC /* CallingInfo.xcdatamodel */;
+			path = CallingInfo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		EAB43B941D105F64006D3FF7 /* Uber.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EAB43B951D105F64006D3FF7 /* Uber.xcdatamodel */,
+			);
+			currentVersion = EAB43B951D105F64006D3FF7 /* Uber.xcdatamodel */;
+			path = Uber.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EAB43B821D105F64006D3FF7 /* Project object */;
+}
