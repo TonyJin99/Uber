@@ -44,8 +44,6 @@ class TJHomeViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //self.navigationItem.titleView = UIImageView(image: UIImage(named: "Rider"))
         riderContext = CoreDataManager.shareInstance().setupContextWithModelName("RiderInfo")
             
         if self.revealViewController() != nil {

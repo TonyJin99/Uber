@@ -115,7 +115,6 @@ class TJDriverViewController: UIViewController,CLLocationManagerDelegate {
 
   }
 
-
 extension TJDriverViewController: MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

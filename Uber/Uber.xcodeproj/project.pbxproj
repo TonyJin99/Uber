@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA7BF3A8201AF72D001EE489 /* TJNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7BF3A7201AF72D001EE489 /* TJNewsViewController.swift */; };
 		EA135D171D1D920800CB10E4 /* TJHistroyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA135D161D1D920800CB10E4 /* TJHistroyViewController.swift */; };
 		EA135D1B1D1F031000CB10E4 /* TJDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA135D1A1D1F031000CB10E4 /* TJDetailViewController.swift */; };
 		EA135D1E1D2065B800CB10E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA135D1C1D2065B800CB10E4 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA7BF3A7201AF72D001EE489 /* TJNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJNewsViewController.swift; sourceTree = "<group>"; };
 		EA135D161D1D920800CB10E4 /* TJHistroyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJHistroyViewController.swift; sourceTree = "<group>"; };
 		EA135D1A1D1F031000CB10E4 /* TJDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJDetailViewController.swift; sourceTree = "<group>"; };
 		EA135D1D1D2065B800CB10E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				EA7E4CFC1D199A9200DDCA6A /* TJDriverViewController.swift */,
 				EA135D1A1D1F031000CB10E4 /* TJDetailViewController.swift */,
 				EA135D161D1D920800CB10E4 /* TJHistroyViewController.swift */,
+				DA7BF3A7201AF72D001EE489 /* TJNewsViewController.swift */,
 				EA8134B51D19E54200C626A5 /* CoreDataManager.swift */,
 				EAB43B971D105F64006D3FF7 /* Assets.xcassets */,
 			);
@@ -370,6 +373,7 @@
 				EA9405321D11C89600B75D02 /* TJAccountCell.swift in Sources */,
 				EAB43BD11D109A7A006D3FF7 /* Information+CoreDataProperties.m in Sources */,
 				EA91CD701D20E28A001A6BDC /* CallingInformation.m in Sources */,
+				DA7BF3A8201AF72D001EE489 /* TJNewsViewController.swift in Sources */,
 				EA9405341D123B4300B75D02 /* TJAccountViewController.swift in Sources */,
 				EA91CD6F1D20E28A001A6BDC /* CallingInformation+CoreDataProperties.m in Sources */,
 				EA8134AE1D19A8C700C626A5 /* RiderInfo.xcdatamodeld in Sources */,
