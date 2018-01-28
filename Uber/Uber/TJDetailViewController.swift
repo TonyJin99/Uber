@@ -47,7 +47,6 @@ class TJDetailViewController: UIViewController{
             self.address = address
         }
         print("try rebase")
-        print(self.address)
     }
 
     
