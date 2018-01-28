@@ -70,8 +70,6 @@ class TJHomeViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
         if (UIDevice.current.systemVersion as NSString).doubleValue > 8.0{
             manager.requestAlwaysAuthorization()
             print("after ios 8")
-        }else{
-            print("before ios 7")
         }
         
         self.customMap.isRotateEnabled = false

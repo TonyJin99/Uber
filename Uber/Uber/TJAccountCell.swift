@@ -15,7 +15,7 @@ class TJAccountCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        print("Initialization code")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -23,5 +23,6 @@ class TJAccountCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
 
 }
