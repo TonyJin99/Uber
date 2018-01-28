@@ -46,6 +46,7 @@ class TJDetailViewController: UIViewController{
             let address = String(format: "%@, %@, %@", (placemark?.name)!, (placemark?.locality)!, (placemark?.administrativeArea)!)
             self.address = address
         }
+        print("try rebase")
         print(self.address)
     }
 
